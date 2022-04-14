@@ -12,5 +12,8 @@ module.exports = {
         res.render('pizza', {
             pizza: pizza
         })
+    },
+    buscar: (req, res) => {
+        console.log(req.query);
     }
 }

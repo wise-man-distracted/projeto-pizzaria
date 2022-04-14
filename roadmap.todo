@@ -164,7 +164,7 @@ Fase 9 - Criando uma página para mostrar detalhes de uma pizza:
     ✔ Na pasta views, crie o arquivo pizza.ejs @done(22-04-14 09:21)
     ✔ Copie para o arquivo pizza.ejs o conteúdo do link abaixo @done(22-04-14 09:24)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/pizza.html
-    ☐ Adeque o arquivo de pizza.ejs para exibir as informações dinâmicas:
+    ✔ Adeque o arquivo de pizza.ejs para exibir as informações dinâmicas: @done(22-04-14 09:28)
         Exemplo:
             Onde se vê:
             <h1>Quatro Queijos</h1>
@@ -178,17 +178,17 @@ Fase 9 - Criando uma página para mostrar detalhes de uma pizza:
             O que se deve ver são as informações da pizza Fracatu, ainda sem estilização.
 
 Fase 10 - Acrescentando estilo à página de pizza:
-    ☐ Na pasta public/css crie um arquivo pizza.css
-    ☐ Copie para o arquivo pizza.css o conteúdo do link abaixo:
+    ✔ Na pasta public/css crie um arquivo pizza.css @done(22-04-14 09:31)
+    ✔ Copie para o arquivo pizza.css o conteúdo do link abaixo: @done(22-04-14 09:31)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/assets/css/pizza.css
-    ☐ Adeque o os links de estilos para que eles carreguem o estilo da pasta public
+    ✔ Adeque o os links de estilos para que eles carreguem o estilo da pasta public @done(22-04-14 09:31)
     
     Verificações:
         Com o servidor rodando, visite o endereço http://localhost:3000/pizzas/3
         O que se deve ver é uma página com as informações de uma pizza, agora, estilizada.
 
 Fase 11 - Criando link da página inicial para página de detalhes de uma pizza:
-    ☐ Na view da página inicial, ou seja, no arquivo pizzas.ejs altere o link:
+    ✔ Na view da página inicial, ou seja, no arquivo pizzas.ejs altere o link: @done(22-04-14 10:17)
     Onde se vê:
         <a href="pizza.html">Ver Mais</a>
     Deve se ver:
@@ -200,13 +200,13 @@ Fase 11 - Criando link da página inicial para página de detalhes de uma pizza:
         Você deve ser direcionado para a página que exibe as informações
         da pizza que você clicou.
 Fase 12 - Exibindo pizzas buscadas:
-    ☐ Adequando o form da view para busca
+    ✔ Adequando o form da view para busca @done(22-04-14 10:17)
         No arquivo pizzas.ejs altere o form para que ele tenha método get e
         action apontando para a rota /pizzas/busca
-    ☐ No PizzasRouter.js, crie uma rota get para /pizzas/busca.
+    ✔ No PizzasRouter.js, crie uma rota get para /pizzas/busca. @done(22-04-14 11:14)
         Essa rota deve direcionar a requisição para PizzasController.buscar
         Ela deve ser definida ANDTES da rota '/pizzas/:id'. Por que?
-    ☐ No objeto do PizzasController.js crie uma função buscar.
+    ✔ No objeto do PizzasController.js crie uma função buscar. @done(22-04-14 11:15)
         Essa função deve:
             ☐ Capturar o que o usuário digitou no campo de busca e guardar na variável trechoBuscado
                Dica: Dê um console.log(req.query) e veja o conteúdo desse objeto.
