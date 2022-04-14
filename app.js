@@ -5,7 +5,7 @@ const logger = require('morgan');
 const path = require('path');
 
 const indexRouter = require('./routes/index');
-const pizzaRouter = require('./routes/pizzaRouter')
+const pizzaRouter = require('./routes/pizzasRouter')
 
 const app = express();
 

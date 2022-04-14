@@ -131,11 +131,11 @@ Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
         ✔ Importe o conteúdo do arquivo Pizzas.json para uma variável chamada pizzas. @done(22-04-13 22:05)
         ✔ Altere a função listar para que ela renderize a view pizzas passando para ela também a variável pizzas. @done(22-04-13 22:19)
     ☐ No arquivo pizzas.ejs
-        ☐ Logo no começo da tag main, crie um elemento <% %> com um 'for'
-        ☐ Este 'for' deve percorrer o array de pizzas. Dica: for(p of pizzas){}
-        ☐ Ponha dentro do for um dos elementos' article presentes no arquivo
-        ☐ Lembre de ter um elemento <% %> para fechar o for, isto é: <% } %>
-        ☐ Injete nesse elemento article que está dentro do for as informações dinâmicas:
+        ✔ Logo no começo da tag main, crie um elemento <% %> com um 'for' @done(22-04-14 08:13)
+        ✔ Este 'for' deve percorrer o array de pizzas. Dica: for(p of pizzas){} @done(22-04-14 08:13)
+        ✔ Ponha dentro do for um dos elementos' article presentes no arquivo @done(22-04-14 08:14)
+        ✔ Lembre de ter um elemento <% %> para fechar o for, isto é: <% } %> @done(22-04-14 08:18)
+        ✔ Injete nesse elemento article que está dentro do for as informações dinâmicas: @done(22-04-14 08:18)
         Exemplo:
             Onde se vê:
             <img src="/img/quatroqueijos.jpg" alt="Quatro Queijos">
@@ -143,7 +143,7 @@ Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
             <img src="<%=p.img%>" alt="<%=p.nome%>">
         Obs:
             Ainda não alteraremos o link <a href="pizza.html">Ver Mais</a>
-        ☐ Apague todos os elementos article que estiverem fora do for.
+        ✔ Apague todos os elementos article que estiverem fora do for. @done(22-04-14 08:19)
     
     Verificações:
         Com o sevidor rodando, visite o endereço https://localhost:3000
@@ -152,17 +152,17 @@ Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
 
 
 Fase 9 - Criando uma página para mostrar detalhes de uma pizza:
-    ☐ No arquivo PizzasRouter.js crie uma rota get para '/pizzas/:id'
+    ✔ No arquivo PizzasRouter.js crie uma rota get para '/pizzas/:id' @done(22-04-14 08:23)
         Essa rota deve direcionar a requisição para o controller PizzasController.mostrar
-    ☐ No objeto literal do arquivo PizzasController.js, crie uma função chamada mostrar.
+    ✔ No objeto literal do arquivo PizzasController.js, crie uma função chamada mostrar. @done(22-04-14 08:26)
         Essa função deve:
-            ☐ Capturar o id da pizza desejada pelo usuário (req.params.id) numa variável id
-            ☐ Buscar no array de pizzas a pizza tem o id buscado e guardar numa variável pizza
+            ✔ Capturar o id da pizza desejada pelo usuário (req.params.id) numa variável id @done(22-04-14 08:29)
+            ✔ Buscar no array de pizzas a pizza tem o id buscado e guardar numa variável pizza @done(22-04-14 08:37)
                 Dica: pizzas.find(p=>p.id==id)
-            ☐ Renderizar a view pizza.ejs, passando para ela também a variável pizza
+            ✔ Renderizar a view pizza.ejs, passando para ela também a variável pizza @done(22-04-14 09:20)
 
-    ☐ Na pasta views, crie o arquivo pizza.ejs
-    ☐ Copie para o arquivo pizza.ejs o conteúdo do link abaixo
+    ✔ Na pasta views, crie o arquivo pizza.ejs @done(22-04-14 09:21)
+    ✔ Copie para o arquivo pizza.ejs o conteúdo do link abaixo @done(22-04-14 09:24)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/pizza.html
     ☐ Adeque o arquivo de pizza.ejs para exibir as informações dinâmicas:
         Exemplo:
