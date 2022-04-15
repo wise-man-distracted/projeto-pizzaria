@@ -14,6 +14,19 @@ module.exports = {
         })
     },
     buscar: (req, res) => {
-        console.log(req.query);
+        let trechoBuscado = req.query.q
+        if(!trechoBuscado) {
+            res.redirect('/pizzas')
+        } else {
+            let resultado = pizzas.filter((obj)=>{
+                return Object.keys(obj).reduce((acc, curr)=>{
+                      return acc || obj[curr].toString().toLowerCase().includes(trechoBuscado);
+                }, false);
+            }); 
+            res.render('pizzas', {
+                pizzas: resultado,
+                busca: trechoBuscado
+              });
+        }
     }
 }

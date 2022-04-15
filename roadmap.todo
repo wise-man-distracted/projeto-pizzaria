@@ -208,17 +208,17 @@ Fase 12 - Exibindo pizzas buscadas:
         Ela deve ser definida ANDTES da rota '/pizzas/:id'. Por que?
     ✔ No objeto do PizzasController.js crie uma função buscar. @done(22-04-14 11:15)
         Essa função deve:
-            ☐ Capturar o que o usuário digitou no campo de busca e guardar na variável trechoBuscado
+            ✔ Capturar o que o usuário digitou no campo de busca e guardar na variável trechoBuscado @done(22-04-15 10:39)
                Dica: Dê um console.log(req.query) e veja o conteúdo desse objeto.
-            ☐ Se o trechoBuscado for vazio, redirecione o usuário para a rota '/'
+            ✔ Se o trechoBuscado for vazio, redirecione o usuário para a rota '/' @done(22-04-15 10:43)
                 Dica: res.redirect(___)
-            ☐ Se trechoBuscado não for vazio:
-                - Filtre do array de pizzas todas as pizzas que tem no nome o trechoBuscado
+            ✔ Se trechoBuscado não for vazio: @done(22-04-15 11:13)
+                ✔ Filtre do array de pizzas todas as pizzas que tem no nome o trechoBuscado @done(22-04-15 11:16)
                     Atenção: A busca não deve ser sensível ao caso, ou seja, 
                     buscando por 'm' deve encontrar 'Marguerita', mesmo tendo-se
                     buscado pela letra minúscula
-                - Armazene o resultado dessa filtragem numa variável resultado
-                - Renderize a view pizzas.ejs passando para ela um objeto literal contendo:
+                ✔ Armazene o resultado dessa filtragem numa variável resultado @done(22-04-15 10:47)
+                ✔ Renderize a view pizzas.ejs passando para ela um objeto literal contendo: @done(22-04-15 11:15)
                     1. Um campo de nome pizzas e de valor igual a variável resultado.
                     2. Um campo de nome busca com o valor igual a variável trechoBuscado.
                 Dica: res.render('pizzas.ejs',{campo1: valor1, campo2: valor2})
