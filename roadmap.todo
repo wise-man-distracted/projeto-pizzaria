@@ -227,7 +227,7 @@ Fase 12 - Exibindo pizzas buscadas:
         Devem aparecer somente as pizzas Baiana e Meat & Bacon
 
 Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada:
-    ☐ No pizzas.ejs:
+    ✔ No pizzas.ejs: @done(22-04-15 13:27)
         Crie um elemento por cento e nele um if que testa se
         o tamanho do array de pizzas é zero. Caso seja, mostrar mensagem...
         <div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
@@ -238,18 +238,18 @@ Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada:
         específico na sua busca."
 
 Fase 14 - Fazendo com que o que o usuário digitou na busca não seja perdido:
-    ☐ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio.
-    ☐ No controller listar do PizzasController, além do array de pizzas, passe um campo "busca" com o valor '' (string vazia).
+    ✔ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio. @done(22-04-15 13:32)
+    ✔ No controller listar do PizzasController, além do array de pizzas, passe um campo "busca" com o valor '' (string vazia). @done(22-04-15 13:32)
 
 Fase 15 - Passando de uma pizza para outra:
     Nessa fase, faremos com que na página que exibe os detalhes de
     uma pizza, seja possível navegar para a próxima pizza e para
     a pizza anterior clicando nos links em forma de seta
-    ☐ Na função mostrar no arquivo PizzasController:
-        - Declare duas variáveis: idProxima e idAnterior 
-        - Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id)
-        - Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao
-        - Guarde a pizza da posicao encontrada na variável pizza
+    ✔ Na função mostrar no arquivo PizzasController: @done(22-04-15 13:35)
+        ✔ Declare duas variáveis: idProxima e idAnterior @done(22-04-15 13:35)
+        ✔ Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id) @done(22-04-15 13:39)
+        ✔ Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao @done(22-04-15 15:30)
+        ✔ Guarde a pizza da posicao encontrada na variável pizza @done(22-04-15 17:52)
         - Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza
         - Caso contrário, idProxima deve ter o id da pizza da posição seguinte
         - Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza
