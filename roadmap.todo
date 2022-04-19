@@ -130,7 +130,7 @@ Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
     ✔ No arquivo PizzasController.js @done(22-04-13 22:05)
         ✔ Importe o conteúdo do arquivo Pizzas.json para uma variável chamada pizzas. @done(22-04-13 22:05)
         ✔ Altere a função listar para que ela renderize a view pizzas passando para ela também a variável pizzas. @done(22-04-13 22:19)
-    ☐ No arquivo pizzas.ejs
+    ✔ No arquivo pizzas.ejs @done(22-04-15 18:23)
         ✔ Logo no começo da tag main, crie um elemento <% %> com um 'for' @done(22-04-14 08:13)
         ✔ Este 'for' deve percorrer o array de pizzas. Dica: for(p of pizzas){} @done(22-04-14 08:13)
         ✔ Ponha dentro do for um dos elementos' article presentes no arquivo @done(22-04-14 08:14)
@@ -250,11 +250,11 @@ Fase 15 - Passando de uma pizza para outra:
         ✔ Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id) @done(22-04-15 13:39)
         ✔ Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao @done(22-04-15 15:30)
         ✔ Guarde a pizza da posicao encontrada na variável pizza @done(22-04-15 17:52)
-        - Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza
-        - Caso contrário, idProxima deve ter o id da pizza da posição seguinte
-        - Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza
-        - Caso controário, idAnterior deve receber o id da pizza na posição anterior.
-    ☐ No arquivo pizza.ejs, adeque os links:
+        ✔ Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza @done(22-04-15 18:23)
+        ✔ Caso contrário, idProxima deve ter o id da pizza da posição seguinte @done(22-04-15 18:23)
+        ✔ Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza @done(22-04-15 18:23)
+        ✔ Caso controário, idAnterior deve receber o id da pizza na posição anterior. @done(22-04-15 18:23)
+    ✔ No arquivo pizza.ejs, adeque os links: @done(22-04-15 18:23)
         Onde se vê:
             <a href="pizza.html" class="prev">
         Deve se ver:
